@@ -12,12 +12,22 @@
     background-size: contain;
     margin-top: 5%;
     height: 80vh;
+    text-shadow: 0 0 10px #fff;
+
 }
 
 .header p {
     font-size: larger;
     font-family: monospace;
     font-weight: 100;
+    text-shadow: 0 0 10px #fff;
+}
+
+.price p span{
+    background-color: #a1baff;
+    border-radius: 50px;
+    font-family: monospace;
+    font-weight: 100
 }
 
 .header .title h1 {
@@ -42,10 +52,12 @@
     justify-content: left;
     padding: .5% 0;
     gap: 12px;
+    text-shadow: 0 0 4px #fff;
 }
 
 .sosmed a, .contact-me a {
     text-decoration: none;
+    text-shadow: 0 0 10px #fff;
 }
 
 .contact-me {
