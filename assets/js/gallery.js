@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Data gambar
     const imageData = [
-        { src: "../../assets/img/logo-devteam.png", alt: "Desain Logo-Devteam" },
+        { src: "https://t.if.co.id/714220046/assets/img/logo-devteam.png", alt: "Desain Logo-Devteam" },
         { src: "../../assets/img/PosterYudisium.png", alt: "Desain Poster-Yudisium" },
         { src: "../../assets/img/flyer-bootcamp.png", alt: "Desain Flyer Bootcamp" },
         { src: "../../assets/img/flyer-kulum.png", alt: "Desain Flyer Kuliah Umum" },
