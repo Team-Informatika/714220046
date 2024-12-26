@@ -30,17 +30,17 @@ const youtubeData = [
 // Data Audio Upload
 const audioData = [
     {
-        src: "../assets/audio/GrandDeFuture.mp3",
+        src: "../../assets/audio/GrandDeFuture.mp3",
         title: "Grand De Future",
         description: "Musik Orkestra Klasik untuk memandu acara"
     },
     {
-        src: "../assets/audio/GrandOpening.mp3",
+        src: "../../assets/audio/GrandOpening.mp3",
         title: "Grand Opening",
         description: "Musik Orkestra Klasik untuk pembukaan acara"
     },
     {
-        src: "../assets/audio/Solo.mp3",
+        src: "../../assets/audio/Solo.mp3",
         title: "Solo - RnB type beat",
         description: "Musik dengan aliran RnB"
     },
