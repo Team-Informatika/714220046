@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Nabla&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&family=Tilt+Neon&display=swap');
+
+/* ### MUSIK ### */
+/* Gaya Umum untuk Section Musik */
+#music {
+    padding: 40px 5%;
+    background: linear-gradient(#fff, #f4f4f4);
+    text-align: center;
+}
+
+#music h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#music h3 {
+    margin: 20px 5px;
+}
+
+/* Platform Flex Layout */
+.platform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Menyusun platform menjadi vertikal pada layar kecil */
+}
+
+/* Kontainer untuk 3 Kolom */
+.music-rows {
+    display: flex;
+    flex-wrap: wrap;  /* Membuat kontainer responsif */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Card untuk Spotify */
+.spotify-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Menjadikan Spotify gallery responsif */
+}
+
+.spotify-card iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Card untuk YouTube */
+.youtube-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Menyusun kartu jika ada lebih dari satu baris */
+    margin-top: 20px;
+}
+
+.youtube-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    padding: 15px; /* Memberi jarak pada konten dalam card */
+    width: 100%; /* Lebar card mengikuti ukuran container */
+    max-width: 320px; /* Maksimal lebar card */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Menjaga jarak antara iframe dan teks */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+}
+
+.youtube-card:hover {
+    transform: translateY(-5px); /* Efek naik saat hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih jelas saat hover */
+}
+
+.youtube-card iframe {
+    border-radius: 10px;
+    margin-bottom: 10px; /* Memberikan jarak antara iframe dan teks */
+    width: 100%; /* Lebar iframe mengikuti ukuran card */
+    height: 180px; /* Ukuran tinggi iframe */
+}
+
+.youtube-card a {
+    font-size: 1.1em;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    overflow-wrap: break-word; /* Membuat teks tetap dalam batas */
+    text-align: center;
+}
+
+.youtube-card a:hover {
+    color: #007bff; /* Mengubah warna teks saat hover */
+}
+
+/* Card untuk Audio Upload */
+.audio-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  /* Membuat galeri audio responsif */
+}
+
+.audio-card {
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+.audio-card audio {
+    width: 100%;
+    margin-bottom: 15px; /* Memberikan jarak antara audio player dan teks */
+}
+
+.audio-card p {
+    font-size: small;
+}
+
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+    #music h2 {
+        font-size: 2em;
+    }
+
+    .music-rows {
+        flex-direction: column; /* Menyusun ulang baris menjadi kolom pada layar kecil */
+        align-items: center;
+    }
+
+    .youtube-card, .audio-card, .spotify-card {
+        width: 90%; /* Memperkecil ukuran card untuk perangkat kecil */
+        max-width: none;
+    }
+
+    .platform {
+        flex-direction: column;
+    }
+
+    /* Menjadikan Spotify gallery dalam bentuk list pada layar kecil */
+    .spotify-gallery {
+        flex-direction: column;
+    }
+
+    .spotify-card {
+        margin-bottom: 20px; /* Memberi jarak antar card pada layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    #music h2 {
+        font-size: 1.8em;
+    }
+
+    .youtube-card iframe {
+        height: 150px; /* Menurunkan ukuran iframe pada perangkat lebih kecil */
+    }
+
+    .audio-card {
+        padding: 20px; /* Mengurangi padding pada perangkat kecil */
+    }
+
+    .spotify-card iframe {
+        height: 160px; /* Menurunkan ukuran iframe pada perangkat lebih kecil */
+    }
+}

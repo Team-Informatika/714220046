@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Nabla&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&family=Tilt+Neon&display=swap');
+
+/* Reset Margin dan Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+/* Gaya Umum untuk body */
+body {
+    margin: 0;
+}
+
+/* Gaya Footer Umum */
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* Footer Column */
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+/* Judul di Footer */
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
+
+/* Paragraf di Footer */
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #bbb;
+}
+
+/* Gaya List di Footer */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+/* Gaya Ikon Sosial */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons li a {
+    color: #bbb;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons li a:hover {
+    color: #fff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column p {
+        font-size: 13px;
+    }
+
+    .footer-column ul li a {
+        font-size: 12px;
+    }
+
+    .social-icons li a {
+        font-size: 18px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}

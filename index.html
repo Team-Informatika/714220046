@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilang's Profile | 714220046</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/dev.css">
+    <link rel="stylesheet" href="./assets/css/design.css">
+    <link rel="stylesheet" href="./assets/css/music.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Gilang Andhika</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#dev">Dev</a></li>
+                    <li><a href="#graphic-design">Desain Grafis</a></li>
+                    <li><a href="#music">Musik</a></li>
+                    <li><a href="https://wa.me/62881023171632" target="_blank">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <button>
+                    <p>Donasi</p>
+                </button>
+                <button>
+                    <div class="ph ph-globe"></div>
+                    <p>Indonesia</p>
+                </button>
+            </div>
+            <!-- Hamburger Button with ph-list icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <section id="profile">
+        <div class="container">
+            <div class="header">
+                <p>Gilang Andhika Buwana</p>
+                <div class="title">
+                    <h1>Visual Designer <br> & Developer</h1>
+                </div>
+                <div class="line"></div>
+                <div class="sosmed">
+                    <a href="">
+                        <div class="ph ph-instagram-logo"></div>
+                    </a>
+                    <a href="">
+                        <div class="ph ph-github-logo"></div>
+                    </a>
+                    <a href="">
+                        <div class="ph ph-linkedin-logo"></div>
+                    </a>
+                </div>
+                <div class="contact-me">
+                    <a href="https://wa.me/62881023171632" target="_blank">
+                        <div class="ph ph-whatsapp-logo"></div>
+                    </a>
+                    <p>Pesan</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <section id="dev">
+        <div class="container">
+            <h2>Bahasa Pemrograman</h2>
+            <p>Beberapa bahasa pemrograman yang saya kuasai</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>HTML</h3>
+                        <p>Level: Advanced</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>CSS</h3>
+                        <p>Level: Advanced</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>JavaScript</h3>
+                        <p>Level: Intermediate</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Go</h3>
+                        <p>Level: Intermediate</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Python</h3>
+                        <p>Level: Beginner</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Websites</h2>
+            <p>Beberapa website yang saya bangun</p>
+            <div class="website-card-grid">
+                <div class="website-card" id="idbiz">
+                    <iframe src="https://id.biz.id" frameborder="0" class="website-preview"></iframe>
+                    <div class="website-card-content">
+                        <h3><a href="https://id.biz.id" target="_blank">id.biz.id</a></h3>
+                        <p>Website untuk layanan bisnis</p>
+                    </div>
+                </div>
+                <div class="website-card" id="helpdesk">
+                    <iframe src="http://helpdesk.ulbi.ac.id" frameborder="0" class="website-preview"></iframe>
+                    <div class="website-card-content">
+                        <h3><a href="http://helpdesk.ulbi.ac.id" target="_blank">helpdesk.ulbi.ac.id</a></h3>
+                        <p>Platform layanan helpdesk</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section id="graphic-design">
+        <div class="container">
+            <h2>Desain Grafis</h2>
+            <p>Saya juga memiliki kemampuan dalam bidang seni desain grafis. <br>Berikut adalah hasil karya desain grafis saya</p>
+            
+            <!-- Galeri Gambar -->
+            <div class="masonry-gallery" id="masonryGallery"></div>
+    
+        </div>
+    </section>
+
+    <section id="music">
+        <div class="container">
+            <h2>Musik</h2>
+            <p>Saya juga memiliki kegemaran untuk memproduksi lagu dan saya menggunakan nama "Grizz Music". <br>Berikut adalah beberapa karya musik saya dalam berbagai platform.</p>
+            
+            <!-- Kontainer Kolom Musik -->
+            <div class="music-rows">
+                <!-- Kolom 1: Spotify -->
+                <div class="music-row-spotify">
+                    <div class="platform">
+                        <div class="ph ph-spotify-logo" style="color: #000;font-size: x-large;"></div>
+                        <h3>Spotify</h3>
+                    </div>
+                    <div class="spotify-gallery" id="spotify-gallery">
+                        <!-- Spotify cards will be injected here dynamically -->
+                    </div>
+                </div>
+        
+                <!-- Kolom 2: YouTube -->
+                <div class="music-row-yt">
+                    <div class="platform">
+                        <div class="ph ph-youtube-logo" style="color: #000;font-size: x-large;"></div> 
+                        <h3>YouTube</h3>
+                    </div>
+                    <div class="youtube-gallery" id="youtube-gallery">
+                        <!-- YouTube cards will be injected here dynamically -->
+                    </div>
+                </div>
+
+        
+                <!-- Kolom 3: Musik Upload -->
+                <div class="music-row-audio">
+                    <div class="platform">
+                        <div class="ph ph-file-audio" style="color: #000;font-size: x-large;"></div> 
+                        <h3>Pesanan</h3>
+                    </div>
+                    <div class="audio-gallery" id="audio-gallery">
+                        <!-- Audio cards will be injected here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Kolom 1: Tentang Saya -->
+                <div class="footer-column">
+                    <h3>Tentang Saya</h3>
+                    <p>Selamat datang di portofolio saya! Saya seorang kreator musik, desainer grafis, dan pengembang web yang berbagi karya-karya saya di berbagai platform.</p>
+                </div>
+    
+                <!-- Kolom 2: Kontak -->
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><a href="mailto:gilang@ulbi.ac.id">gilang@ulbi.ac.id</a></li>
+                        <li><a href="tel:+62881023171632">+62 881 0231 71632</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Kolom 3: Media Sosial -->
+                <div class="footer-column">
+                    <h3>Ikuti Saya</h3>
+                    <ul class="social-icons">
+                        <li><a href="https://www.instagram.com/itsg.lang" target="_blank"><i class="ph ph-instagram-logo"></i></a></li>
+                        <li><a href="https://www.github.com/gilangandhika" target="_blank"><i class="ph ph-github-logo"></i></a></li>
+                        <li><a href="https://www.youtube.com/grizz_music" target="_blank"><i class="ph ph-youtube-logo"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><i class="ph ph-linkedin-logo"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2024 Semua hak cipta dilindungi. Dibuat oleh Gilang Andhika Buwana.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    <script>
+        document.querySelector("#idbiz").addEventListener("click", function() {
+            window.open("https://id.biz.id", "_blank");
+        });
+        document.querySelector("#helpdesk").addEventListener("click", function() {
+            window.open("https://helpdesk.ulbi.ac.id", "_blank");
+        });
+    </script>
+
+    <script src="./assets/js/gallery.js"></script>
+    <script src="./assets/js/music.js"></script>
+    <script src="./assets/js/burger.js"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+
+</body>
+</html>

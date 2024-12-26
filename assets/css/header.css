@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Nabla&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&family=Tilt+Neon&display=swap');
+
+/* ### HEADER ### */
+.container {
+    padding: 0 5%;
+}
+
+.header {
+    background-position: center;
+    background-image: url('../img/profile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5%;
+    height: 80vh;
+}
+
+.header p {
+    font-size: larger;
+    font-family: monospace;
+    font-weight: 100;
+}
+
+.header .title h1 {
+    font-size: 60px;
+    line-height: 1;
+    padding-top: 1%;
+    cursor: default;
+}
+
+.line {
+    background-color: #000;
+    height: .5%;
+    width: 10%;
+    border-radius: 100px;
+    margin: 1% 0;
+}
+
+.sosmed, .sosmed .ph {
+    color: #000;
+    font-size: larger;
+    display: flex;
+    justify-content: left;
+    padding: .5% 0;
+    gap: 12px;
+}
+
+.sosmed a, .contact-me a {
+    text-decoration: none;
+}
+
+.contact-me {
+    display: flexbox;
+    justify-items: center;
+    position: fixed; 
+    right: 5%; 
+    bottom: 5%; 
+    background-color: rgb(78, 255, 122);
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    align-items: center; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+    z-index: 400;
+}
+
+.contact-me:hover {
+    transform: scale(1.1); /* Membesarkan elemen sedikit saat di-hover */
+}
+
+.contact-me .ph {
+    color: #000;
+    font-size: 24px; /* Ukuran ikon */
+    padding-top: 7px;
+}
+
+.contact-me p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: small;
+}
+
+/* ### Media Queries for Responsiveness ### */
+
+/* Untuk layar kecil (tablet dan di bawahnya) */
+@media (max-width: 1024px) {
+    .header {
+        height: 100vh; /* Kurangi tinggi header pada tablet */
+    }
+
+    .header .title h1 {
+        font-size: 50px; /* Ukuran font judul lebih kecil */
+    }
+
+    .line {
+        width: 20%; /* Lebar garis bawah lebih lebar */
+    }
+
+    .sosmed {
+        font-size: 1.2rem;
+    }
+
+    .contact-me {
+        width: 55px;
+        height: 55px;
+    }
+
+    .contact-me .ph {
+        font-size: 22px; /* Ukuran ikon sedikit lebih kecil */
+    }
+}
+
+/* Untuk layar lebih kecil (mobile) */
+@media (max-width: 768px) {
+    .header {
+        height: auto; /* Sesuaikan dengan konten pada layar kecil */
+        padding: 40px 0; /* Padding yang lebih kecil */
+        text-align: center;
+    }
+
+    .header .title h1 {
+        font-size: 40px; /* Ukuran font judul lebih kecil pada perangkat kecil */
+        padding: 50px 0;
+    }
+
+    .line {
+        width: 30%; /* Lebar garis bawah lebih lebar pada layar kecil */
+    }
+
+    .sosmed {
+        font-size: 1.1rem;
+        gap: 10px; /* Kurangi jarak antar ikon */
+        justify-content: center;
+    }
+
+    .contact-me {
+        width: 50px;
+        height: 50px;
+        right: 2%; /* Posisi sedikit lebih dekat ke sisi kanan */
+        bottom: 2%; /* Posisi sedikit lebih dekat ke bawah */
+    }
+
+    .contact-me .ph {
+        font-size: 20px;
+    }
+
+    .contact-me p {
+        font-size: 0.8rem; /* Ukuran teks lebih kecil pada perangkat kecil */
+        display: none; /* Menyembunyikan teks pada mobile */
+    }
+}
+
+/* Untuk layar sangat kecil (smartphone) */
+@media (max-width: 480px) {
+    .header .title h1 {
+        font-size: 35px; /* Ukuran font lebih kecil */
+    }
+
+    .line {
+        width: 40%; /* Lebar garis bawah lebih lebar pada perangkat sangat kecil */
+    }
+
+    .sosmed {
+        font-size: 1rem;
+        gap: 8px; /* Kurangi jarak antar ikon lebih jauh */
+    }
+
+    .contact-me {
+        width: 45px;
+        height: 45px;
+        right: 2%; /* Posisi sedikit lebih dekat ke sisi kanan */
+        bottom: 2%; /* Posisi sedikit lebih dekat ke bawah */
+    }
+
+    .contact-me .ph {
+        font-size: 18px; /* Ukuran ikon lebih kecil */
+    }
+
+    .contact-me p {
+        font-size: 0.7rem; /* Ukuran teks lebih kecil */
+    }
+}

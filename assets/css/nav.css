@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Nabla&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&family=Tilt+Neon&display=swap');
+
+/* ### NAVBAR ### */
+nav {
+    top: 0;
+    z-index: 500;
+    position: sticky;
+    width: 100%;
+}
+
+/* Navbar Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the hamburger button is positioned relative to navbar */
+}
+
+/* Logo Styling */
+.logo {
+    color: #1f5bff;
+    font-weight: 800;
+    font-style: italic;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Menu Styling */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Menu Links */
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    position: relative; /* For positioning the pseudo-element */
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+
+}
+
+/* Hover Effect: Underline Animation from Left to Right */
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1f5bff;
+    transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+    width: 100%; /* Expand the underline to full width */
+}
+
+/* Button Styling */
+.btns {
+    display: flex;
+    gap: 12px;
+}
+
+.btns button {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    gap: 5px;
+    background-color: #1f5bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btns button:hover {
+    background-color: #165bb5;
+}
+
+.btns p, .ph {
+    color: #fff;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute; /* Ensure the button stays on the right */
+    right: 20px; /* Position it at the far right */
+}
+
+/* Hamburger Icon */
+.hamburger i {
+    font-size: 30px; /* Ukuran ikon */
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+/* Highlight Active Menu Item */
+.menu ul li a.active {
+    color: #1f5bff; /* Warna menu yang aktif */
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* For smaller screens (less than 768px) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu ul, .btns {
+        display: none; /* Hide menu and btns by default on mobile */
+    }
+
+    .menu.active ul, .btns.active {
+        display: flex; /* Show menu and btns when active */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on smaller screens */
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .menu ul li a {
+        font-size: 1.1rem;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .btns button {
+        width: 100%;
+    }
+}
+
+/* For very small screens (less than 480px) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .menu ul li a {
+        font-size: 1rem;
+    }
+
+    .btns button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
